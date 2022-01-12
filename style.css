@@ -1,0 +1,140 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+}
+  
+.container {
+    display: flex;
+    border: solid black;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 0.5em;
+}
+  
+.tip-row1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+  
+.tip-row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container1 {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container2 {
+  border: solid blue;
+  margin: 2em;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+  
+.btn {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 6.5em;
+    padding: 1em;
+    margin: 0.4em;
+    font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.number:hover {
+  cursor: pointer;
+}
+
+.number {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+  border-style: none;
+  background-color: hsl(190, 86%, 95%);
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.tip-amount {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.tip-child {
+  display: flex;
+  flex-direction: row;
+}
+
+.tip-child h3 {
+  margin: 2.5em;
+}
+
+.tip-child1 {
+  width: 50%;
+}
+
+.tip-child2 {
+  width: 50%;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.reset1 {
+  background-color: hsl(172, 67%, 45%);
+  border-style: none;
+  border-radius: 3px;
+  width: 80%;
+  font-weight: bold;
+  margin-bottom: 4em;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    font-size: 0.85em;
+    margin-top: 8em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    height: 100vh;
+    font-size: 0.9em;
+    margin-top: 15em;
+    margin-bottom: 15px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
