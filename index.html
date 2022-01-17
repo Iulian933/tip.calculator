@@ -17,42 +17,42 @@
       <div class="container1">
           <div class="bill">
               <h3>Bill</h3>
-              <input type="number" name="" id="" class="number" />
+              <input type="number" name="" id="bill" class="number" />
             </div>
       
             <div class="tip-container">
               <h4>Select tip %</h4>
               <div class="tip-row1">
                 <div class="tip">
-                  <button class="row1 btn">5%</button>
+                  <button class="row1 btn" id="five" onclick="calcPercent(5)">5%</button>
                 </div>
       
                 <div class="tip">
-                  <button class="row1 btn">10%</button>
+                  <button class="row1 btn ten" onclick="calcPercent(10)">10%</button>
                 </div>
       
                 <div class="tip">
-                  <button class="row1 btn">15%</button>
+                  <button class="row1 btn fifteen" onclick="calcPercent(15)">15%</button>
                 </div>
               </div>
       
               <div class="tip-row2">
                 <div class="tip">
-                  <button class="row2 btn">20%</button>
+                  <button class="row2 btn twenty" onclick="calcPercent(20)">20%</button>
                 </div>
       
                 <div class="tip">
-                  <button class="row2 btn">25%</button>
+                  <button class="row2 btn twenty-five" onclick="calcPercent(25)">25%</button>
                 </div>
       
                 <div class="tip">
-                  <button class="row2 btn">Select..</button>
+                  <button class="row2 btn select">Select..</button>
                 </div>
               </div>
       
               <div class="people">
                 <h3>Number of people</h3>
-                <input type="number" class="number" />
+                <input type="number" class="number" id="people" />
               </div>
             </div>
           </div>
@@ -62,12 +62,12 @@
 
       <div class="tip-amount">
         <div class="tip-child">
-          <div class="tip-child1">
+          <div class="tip-child1" id="tip-amount">
             <h3>Tip amount <br>/ person</h3>
           </div>
 
           <div class="tip-child1">
-            <h3>0.00</h3>
+            <h3 id="result">0.00</h3>
           </div>
 
         </div>
@@ -77,13 +77,13 @@
           </div>
 
           <div class="tip-child2">
-            <h3>0.00</h3>
+            <h3 id="result-total">0.00</h3>
           </div>
         </div>
       </div>
 
       <div class="reset">
-        <button class="reset1 btn">RESET</button>
+        <button class="reset1 btn" onclick="window.location.reload(true)">RESET</button>
       </div>
     </div>
     <script src="app.js"></script>
